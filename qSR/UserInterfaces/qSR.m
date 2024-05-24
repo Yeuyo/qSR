@@ -72,7 +72,7 @@ if numel(varargin)>0
     filename = file_struct.name;
     dirName = [file_struct.folder,filesep];
     
-    handles=handles.InitialHandles;
+%     handles=handles.InitialHandles;
     handles.InitialHandles=handles;
     set(handles.RestrictToNuclear,'value',0)
     set(handles.RawData,'value',1)
@@ -141,7 +141,7 @@ function LoadData_Callback(hObject, eventdata, handles)
 
 if filename ~= 0
     
-    handles=handles.InitialHandles;
+%     handles=handles.InitialHandles;
     handles.InitialHandles=handles;
     set(handles.RestrictToNuclear,'value',0)
     set(handles.RawData,'value',1)
